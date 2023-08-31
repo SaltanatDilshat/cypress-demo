@@ -1,0 +1,9 @@
+{
+   "first": "John",
+   "last": "Doe",
+   "email": "jdoe@gmail.com",
+   "dob": "10101990",
+   "phone": "2029832032",
+   "sex": "Male",
+   "pronouns": "They/Them"
+}
