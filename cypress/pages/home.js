@@ -6,9 +6,10 @@ class Home {
     */
    open() {
       cy.visit('/')
-      cy.get('div#state-step h2')
-         .should('be.visible')
-         .and('have.text', 'Schedule your Appointment!')
+      cy.get('div#state-step h2').as('header')
+      cy.get('@header').should('be.visible').and('have.text', 'Schedule your Appointment!')
+      cy.lit('@header')
+      // cy.wait(10000)  
    }
 
    /**
@@ -42,9 +43,15 @@ class Home {
     *
     */
    selectTimeSlot(slot) {
+      cy.get('div#appointment-slots a').filter(`[onclick*="bookAppointment('${slot}"]`).click()
+   }
+
+   /**
+    * Selects the first avaiable time slot
+    */
+   selectFirstTimeSlot() {
       cy.get('div#appointment-slots a').eq(0).click()
       cy.get('button#next-button').click()
    }
-
 }
 export const home = new Home()

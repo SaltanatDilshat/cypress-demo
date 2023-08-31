@@ -1,0 +1,18 @@
+{
+   "contact": {
+      "first": "John",
+      "last": "Doe",
+      "email": "jdoe@gmail.com",
+      "dob": "10101990",
+      "phone": "2029832032",
+      "sex": "Male",
+      "pronouns": "He/Him"
+   },
+
+   "shipping": {
+      "line1": "980 Melody Ct Se",
+      "line2": "Apt 102",
+      "city": "Luxburg",
+      "zip": "20148"
+   }
+}
