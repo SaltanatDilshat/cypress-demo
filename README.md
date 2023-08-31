@@ -4,7 +4,7 @@ This is Cypress test automation framework for the Hery-Meds interview assignment
 
 ## Project Set-up
 
-Please clone this project and run the following command
+Please clone this project and run the following command on the root directory of the project
 
 ```shell
 npm install
