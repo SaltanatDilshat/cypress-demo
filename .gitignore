@@ -1,0 +1,9 @@
+node_modules
+.npmrc
+cypress/downlaods
+cypress/screenshots
+cypress/reports
+cypress/videos
+mochawesome-report
+.DS_Store
+package-lock.json
